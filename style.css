@@ -1,0 +1,288 @@
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fefcf7;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease;
+}
+
+/* Header */
+header {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  animation: slideInTop 1s ease forwards;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  color: #f9a825;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #f9a825;
+}
+
+/* Sections */
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 1.2s ease forwards;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #f9a825;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Lists */
+ul {
+  list-style: disc inside;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1.2s ease;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #f9a825;
+  color: #1b3a2f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project a:hover {
+  background-color: #d68910;
+  transform: translateY(-2px);
+}
+
+/* Download CV */
+#education a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#education a:hover {
+  background-color: #256329;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+form label {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fdfdfb;
+}
+
+form button {
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  background-color: #f9a825;
+  color: #1b3a2f;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #d68910;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #1b3a2f;
+  color: #ffffff;
+  margin-top: 3rem;
+}
+
+/* Animations */
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .project a {
+    margin-top: 0.5rem;
+  }
+}
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fefcf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.loader-container {
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.spinner {
+  border: 6px solid #e0e0e0;
+  border-top: 6px solid #2e7d32;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

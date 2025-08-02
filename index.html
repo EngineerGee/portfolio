@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerald Mulwa | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="preloader">
+  <div class="loader-container">
+    <div class="spinner"></div>
+    <p class="loading-text">Gerald Mulwa</p>
+  </div>
+</div>
+
+  <header>
+    <h1>Gerald Mulwa</h1>
+    <p>Web Developer | AI & Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#languages">Languages</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact-me">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Gerald Mulwa, a goal-oriented and passionate Electrical Engineering Technology student at Meru University of Science and Technology, 
+      with a strong foundation in both hands-on technical work and digital innovation. As a proud Kenyan of Kamba heritage and a devoted Christian, 
+      my principles of honesty, discipline, and purpose-driven living deeply influence my personal and professional journey.</p>
+    <p>With over two years of experience as an electrical technician and freelance graphic designer, I've cultivated a diverse skill set that 
+      bridges physical systems with creative digital solutions. My interests lie at the intersection of smart energy systems, artificial intelligence, 
+      and web development — areas where I believe technology can have a powerful, transformative impact on our communities.</p>
+    <p>Outside of academics and work, I am a certified peer counselor and public speaker, committed to youth mentorship and leadership development. 
+      I am also a dedicated Taekwondo martial artist, a discipline that has strengthened my resilience, focus, and teamwork — qualities I carry into
+       every project I pursue.</p>
+    <p>I continue to grow in the fields of engineering, technology and design, I remain guided by my faith, driven by curiosity, and committed to 
+      using my skills to create meaningful solutions that serve both people and purpose.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education & CV</h2>
+    <p>Bachelor of Technology in Electrical Engineering Technology
+Meru University of Science and Technology, Meru, Kenya
+ 2023-2027 (Ongoing)
+Currently pursuing a four-year Bachelor's program focused on core electrical engineering principles, including circuit design, power systems, 
+electronics, automation, and renewable energy technologies.
+Engaged in hands-on lab work, field practicals, and real-time industrial training to complement theoretical knowledge.
+Active member of the university's Engineering Club and Innovators Club, contributing to student-led innovations and tech events.
+Participated in community electrification outreach and on-campus sustainability initiatives.</p>
+    <a href="assets/gerald's-CV.pdf" download>Download CV</a>
+  </section>
+
+  <section id="languages">
+    <h2>Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>C</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Professional Interests</h2>
+    <p>I'm passionate about renewable energy, embedded systems and AI-powered solutions. I enjoy merging tech with practical systems 
+        and I'm always exploring ways to integrate software with hardware. I love staying updated with tech trends and contributing to developer communities.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Smart Energy Management System.</h3>
+      <p>The Smart Energy Management System is designed to monitor and optimize energy usage in real time. It collects data from sensors 
+        to track consumption across appliances and suggests ways to reduce waste. Users can view usage patterns through a web dashboard 
+        and set custom energy-saving rules. The system promotes sustainability by integrating with renewable energy sources like solar. 
+        It's ideal for homes, schools, or offices seeking smarter, greener energy solutions.</p>
+      <a href="https://github.com/EngineerGee/project1" target="_blank">Visit</a>
+    </div>
+    <div class="project">
+      <h3>Smart Home Automation.</h3>
+      <p>This Smart Home Automation system allows users to control lighting, appliances, and security devices remotely. It uses sensors, 
+        Wi-Fi modules, and a central microcontroller to automate daily routines. The system supports voice commands and integrates with platforms
+        like Google Assistant or Alexa. Real-time alerts and status updates are sent to the user's phone for security and convenience. 
+        It enhances comfort, energy efficiency and safety within modern homes.</p>
+        <a href="https://github.com/EngineeerGee/project2" target="_blank">Visit</a>
+    </div>
+    <div class="project">
+      <h3>Personal Budget Tracker.</h3>
+      <p>The Personal Budget App helps users manage their income, expenses, and savings through an intuitive interface. It categorizes
+         spending, sets monthly budgets, and provides alerts for overspending. Users can track financial goals and visualize progress 
+         through graphs and reports. The app supports multiple currencies and data backups for security. It empowers individuals to 
+         take control of their finances and develop healthier spending habits.</p>
+      <a href="https://github.com/EngineeerGee/project3" target="_blank">Visit</a>
+    </div>
+    <div class="project">
+      <h3>AI Chatbot for Customer Support.</h3>
+      <p>The AI Chatbot provides 24/7 automated support to users, answering frequently asked questions and resolving basic issues. 
+        Built using natural language processing (NLP), it understands user intent and offers relevant responses. It reduces human 
+        workload by handling repetitive queries and escalating complex cases to live agents. The chatbot learns from interactions, 
+        improving accuracy over time. It's deployable on websites, mobile apps, or messaging platforms like WhatsApp or Messenger.</p>
+      <a href="https://github.com/EngineeerGee/project4" target="_blank">Visit</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xzzvagak" method="POST">
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="_replyto" required></label>
+      <label>Message: <textarea name="message" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>©2025 Gerald Mulwa | All rights reserved.</p>
+  </footer>
+<script>
+  window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.visibility = "hidden";
+    preloader.style.pointerEvents = "none";
+  });
+</script>
+</body>
+</html>
